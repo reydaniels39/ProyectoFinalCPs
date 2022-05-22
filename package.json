@@ -4,11 +4,19 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "directories": {
+    "test": "test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "child_process": "^1.0.2",
+    "jest": "^28.1.0",
+    "os": "^0.1.2",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
     "serverless-offline": "^8.8.0"
   },
   "dependencies": {
