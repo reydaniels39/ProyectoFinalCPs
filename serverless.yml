@@ -1,5 +1,9 @@
 service: proyectofinal
 
+custom:
+  serverless-offline:
+    host: 0.0.0.0
+
 frameworkVersion: '2'
 
 plugins:

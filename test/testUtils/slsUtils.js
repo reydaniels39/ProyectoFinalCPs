@@ -7,7 +7,7 @@ let slsOfflineProcess;
 const finishLoading = () =>
   new Promise((resolve, reject) => {
     slsOfflineProcess.stdout.on('data', data => {
-      if (data.includes('[HTTP] server ready: http://localhost:3000')) {
+      if (data.includes('[HTTP] server ready: ')) {
         console.log(`Serverless: Offline started with PID : ${slsOfflineProcess.pid}`);
         resolve('ok');
       }
