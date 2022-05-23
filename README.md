@@ -11,4 +11,12 @@ Al utilizar esta lambda con algún código postal usando el endpoint nos deberí
 
 Una caracteristica del repositorio y el proyecto es que al realizar un push, debido al flujo de trabajo que establecimos utilizando github actions, también se subirá la lambda automáticamente a AWS.
 
+Dentro de la carpeta de test podemos encontrar un archivo que nos permite ejecutar el testing sobre el archivo handler.js y además existe otra carpeta que contiene un archivo .js que nos da una pequeña utilidad para poder iniciar y terminar el servidor para poder ejecutar las pruebas.
+
+El código del proyecto en sí se encuentra en el archivo handler.js que es en el que se encuentra nuestra lambda en sí por decirlo de alguna manera, está función toma como parámetro el código postal en la url que recibe y trabaja con el mismo para obtener los datos requeridos.
+
+En la carpeta llamada .github se encuentra nuestra github action que uilicé en el proyecto.
+
+Por último los archivos Dockerfile y docker-compose.yml son los que establecen las "intruscciones" para poder generar nuestra imagen y contenedor de Docker.
+
 Se utilizó serverless, express, jest, docker, github actions para serverless, entre otros.
